@@ -1,2 +1,14 @@
 /temp
 /plugins/spark/tmp
+
+/scripts/plugins
+/scripts/world
+/scripts/world_nether
+/scripts/world_the_end
+/scripts/banned-ips.json
+/scripts/banned-players.json
+/scripts/eula.txt
+/scripts/ops.json
+/scripts/permissions.json
+/scripts/usercache.json
+/scripts/whitelist.json
