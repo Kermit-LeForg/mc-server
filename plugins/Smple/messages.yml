@@ -1,0 +1,9 @@
+prefix:
+  message: <aqua><bold>Smple <gray>» <reset>
+ban-message:
+  message: <red>You are banned from this server for <reason>!
+muted:
+  message: '<red>You are muted for <reason>. Expires in: <duration> '
+smelt-successful:
+  message: org.ammonium.smple.sdk.message.FancyMessage@7578c55a<green>Successfully
+    smelted <item> x<amount>!

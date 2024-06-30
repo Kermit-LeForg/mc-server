@@ -1,0 +1,6 @@
+example: Hello, World!
+chat-format:
+  message: <display_name> <gray>» <reset><message>
+sleep:
+  min-players-sleeping: 1
+  night-skip-delay: 5

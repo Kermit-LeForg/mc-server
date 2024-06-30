@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  server:
+    build: . # todo: change to ghcr image
+    ports:
+      - 25565:25565
+    volumes:
+      - ./banned-ips.json:/banned-ips.json
+      - ./banned-players.json:/banned-players.json
+      - ./eula.txt:/eula.txt
+      # - ./ops.json:/ops.json - leaving it hardcoded for now
+      - ./permissions.json:/permissions.json
+      - ./usercache.json:/usercache.json
+      - ./whitelist.json:/whitelist.json
+      - ./plugins:/plugins
+      - ./world:/world
+      - ./world_nether:/world_nether
+      - ./world_the_end:/world_the_end
+
+  mysql:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=your-root-password
+      - MYSQL_DATABASE=your-database-name
+      - MYSQL_USER=your-username
+      - MYSQL_PASSWORD=your-password
+    ports:
+      - 3307:3306
